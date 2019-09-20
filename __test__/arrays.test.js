@@ -10,4 +10,7 @@ describe('probar que el arreglo contenga un elemento' , () => {
   test('debe tener seis elementos', () => {
     expect(arrayFruits()).toHaveLength(6);
   });
+  test('probar el arreglo contenga un color', () => {
+    expect(arrayColors()).toContain('azul');
+  })
 });
