@@ -3,6 +3,7 @@ import {
 } from '../promise';
 
 describe('Probar Async/Await', () => {
+
   test('Realizar una peticion a una API', async () => {
     const api = 'https://rickandmortyapi.com/api/character/';
     const getRick = 'https://rickandmortyapi.com/api/character/1';
@@ -14,4 +15,15 @@ describe('Probar Async/Await', () => {
       expect(data.name).toEqual('Rick Sanchez');
     });
   });
+
+  test('Realizando una peticion a una API con error', async () => {
+    const apiError = 'http://httpstat.us/404';
+    const peticion = getDataFromApi(apiError);
+    await expect(peticion).rejects.toEqual(Error('Request failed with status code 404'));
+  });
+
+  test('Resuleve un Hola', async () => {
+    await expect(Promise.resolve('Hola')).resolves.toBe('Hola');
+    await expect(Promise.reject('Error')).rejects.toBe('Error');
+  })
 })
