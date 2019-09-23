@@ -17,6 +17,7 @@
   "author": "jose gersain <jhersein@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.0",
     "@babel/preset-env": "^7.6.0",
     "babel-jest": "^24.9.0",
     "babel-polyfill": "^6.26.0",
