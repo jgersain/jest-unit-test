@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Instantaneas Permitir excepciones dentro del código (snapshots) 1`] = `
+Object {
+  "id": Any<Number>,
+  "name": "Oscar Barajas",
+}
+`;
+
+exports[`Instantaneas Siempre fallara la instantanea 1`] = `
+Object {
+  "createAt": 2019-09-24T05:06:00.083Z,
+  "id": 8,
+}
+`;
+
 exports[`Instantaneas Snapshot 1`] = `
 Object {
   "gender": "Male",
